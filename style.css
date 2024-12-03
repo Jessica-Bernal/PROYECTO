@@ -23,6 +23,7 @@ header{
 nav{
     float:left; /*Ubocacion dela barra */
     margin-left: 35%;
+    
     /* background-color: rgba(13, 14, 14, 0.192); */
 }
 
@@ -64,7 +65,8 @@ h1{
 
 .parrafo p{
     margin-left: 50px;
-    
+    margin-right: 50px;
+    text-align: justify;
 }
 
 .parrafo img{
@@ -122,20 +124,22 @@ td, th {
 
 /* jugadores */
 .uno div {
-    background-color: #0b5091;
-    border: 2px solid rgb(7, 2, 2);
+    background-color: #094680;
+    /* border: 2px solid rgb(7, 2, 2); */
     /* background-color: rgb(230, 224, 224); */
     width:370px;
-    height:320px;
+    height:370px;
     text-align: center;
     margin-left: 55px;
     margin-bottom: 30px;
+    border-radius: 20px;
 }
 
 div img{
     width: 260px;
     height: 190px;
-    margin:10px;
+    margin:30px;
+    border-radius: 5px;
 }
 
 div img:hover{
@@ -150,15 +154,42 @@ section{
 
 
 /* tarjeta */
+.prod{
+    margin-left: 200px;
+}
 .prod img{
     width: 380px;
     height: 220px;
+    margin 0;
 }
 figure{
     display: inline-block;
     text-align: center;
-   margin-left: 100px;
-
+    margin-right: 0;
+     /* border: 2px solid rgb(7, 2, 2); */
     
 }
 
+/* tabla partidos */
+.partidos{
+    padding-left: 320px;
+}
+
+.mes{
+    background-color: black;
+    color: antiquewhite;
+    border-color: #00529e;
+    font-size: 20px;
+}
+
+.parte td{
+    padding:4px;
+    /* border-bottom: #00529e; */
+    border: 1px solid rgba(7, 2, 2, 0);
+    text-align: left;
+    border-radius: 10px;
+}
+
+.parte td:hover{
+    background-color: rgb(16, 18, 88);
+}
