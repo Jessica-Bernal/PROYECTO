@@ -1,6 +1,15 @@
 *{
     margin: 0;
 }
+
+.bokor-regular {
+    font-family: "Bokor", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 55px;
+  }
+
+  
 header{
     background-image: url("./ff.jpeg");
     opacity: 0.9;
@@ -60,7 +69,7 @@ h1{
 
 .parrafo img{
     width:150px;
-    margin-left: 47%;
+    margin-left: 44%;
 }
 
 
