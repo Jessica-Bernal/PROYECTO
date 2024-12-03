@@ -167,12 +167,12 @@ figure{
     text-align: center;
     margin-right: 0;
      /* border: 2px solid rgb(7, 2, 2); */
-    
 }
 
 /* tabla partidos */
 .partidos{
     padding-left: 320px;
+     cursor: pointer;
 }
 
 .mes{
@@ -188,8 +188,8 @@ figure{
     border: 1px solid rgba(7, 2, 2, 0);
     text-align: left;
     border-radius: 10px;
+    transition: all ease 500ms;
 }
-
 .parte td:hover{
     background-color: rgb(16, 18, 88);
 }
