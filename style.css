@@ -11,7 +11,7 @@
 
   
 header{
-    background-color: #094680db;
+    background-color: #094680eb;
     width: 100%;
     position: fixed; /*para que se mantenga en todo momento en la pagina*/
     z-index:100; /*especifica el orden en el que se amontonan los elemr¿entos*/
@@ -29,14 +29,15 @@ nav ul{
 
 nav ul li{
     float:left; /*quita la forma de lista*/
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     
 }
 
 nav ul li:hover{
-   background-color: rgb(5, 5, 5);
+   background-color: rgba(5, 5, 5, 0.678);
     font-size: 24px;
+    border-radius: 15px;
 }
 
 nav ul li a{
@@ -47,11 +48,9 @@ nav ul li a{
 }
 
 .fondo{
-    margin-top: 64px;
+    margin-top: 62px;
     width: 100%;
     height:max-content;
-
-    
 }
 
 
@@ -67,8 +66,9 @@ h1{
 }
 
 .parrafo p{
-    margin-left: 50px;
-    margin-right: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: justify;
 }
 
@@ -84,20 +84,29 @@ h1{
     height: 200px;
 }
 */
+
+.producto{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
  .producto p, h2{
-    display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
 } 
 
 
+    
 /* tabla */
 .contenidoo{ 
-    width: 68%;
-    margin-left: 200px;
+    width: 80%;
+    
+    /* margin-left: 200px; */
 }
 table{
-    
+   
     /* color: antiquewhite; */
     font-size: 19px;
     
@@ -105,6 +114,7 @@ table{
     /* border-collapse: collapse;   doble linea border */
 }
 table thead{
+   
      background-color: black;
      color:antiquewhite;
 
@@ -196,4 +206,59 @@ figure{
 
 .parte td:hover{
     background-color: rgb(16, 18, 88);
+}
+
+
+/* galleria */
+.fotos{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.fotos .gale{
+    max-width: 1150px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 350px 350px 350px;
+    grid-gap: 1rem;
+}
+
+.fotos .gale img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.gale img:not(:hover){
+    filter: grayscale(100%);
+}
+
+.fotos .gale .imga{
+    /* background-color: aqua; */
+    grid-column: 1/3;
+}
+
+.fotos .gale .imgb{
+    /* background-color:#094680; */
+    grid-row: 2/4;
+}
+
+.fotos .gale .imgc{
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.fotos .gale .imgd{
+    /* background-color: rgb(13, 0, 255); */
+}
+
+.fotos .gale .imge{
+    /* background-color: rgb(47, 255, 0); */
+}
+
+.fotos .gale .imgf{
+    /* background-color: rgb(255, 0, 217); */
+    grid-column: 2/4;
 }
