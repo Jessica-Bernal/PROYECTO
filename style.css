@@ -8,21 +8,31 @@
     font-style: normal;
     font-size: 55px;
   }
+ 
 
+.logo{
+    width: 110px;
+    list-style: none;
+    margin-top: 3px;
+    height: 100%;
+}
   
 header{
-    background-color: #094680eb;
+    background-color: #00529e;
     width: 100%;
     position: fixed; /*para que se mantenga en todo momento en la pagina*/
     z-index:100; /*especifica el orden en el que se amontonan los elemr¿entos*/
 }
 
 nav{
+    
     float:left; /*Ubocacion dela barra */
     /* background-color: rgba(13, 14, 14, 0.192); */
 }
 
 nav ul{
+    display: flex;
+    align-items:center;
     list-style: none; /*quitar la viñeta*/
     overflow: hidden; /*tdo contenido fuera del bloque se invisibilice*/
 }
@@ -37,12 +47,12 @@ nav ul li{
 nav ul li:hover{
    background-color: rgba(5, 5, 5, 0.678);
     font-size: 24px;
+    
     border-radius: 15px;
 }
 
 nav ul li a{
-    display: block;
-    padding: 20px;
+    padding: 14px;
     color:rgb(250, 244, 244);
     text-decoration: none;
 }
@@ -101,7 +111,7 @@ h1{
     
 /* tabla */
 .contenidoo{ 
-    width: 80%;
+    width: 60%;
     
     /* margin-left: 200px; */
 }
@@ -137,7 +147,7 @@ td, th {
 
 /* jugadores */
 .uno div {
-    background-color: #094680;
+    background-color:#00529e;
     /* border: 2px solid rgb(7, 2, 2); */
     /* background-color: rgb(230, 224, 224); */
     width:370px;
@@ -166,30 +176,49 @@ section{
 }
 
 
-/* tarjeta */
+
+
+
+/* tarjeta escudo */
 .prod{
-    margin-left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00529e;
+    width: 80%;
+    height: 320px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
 }
 .prod img{
     width: 380px;
     height: 220px;
-    margin 0;
+    /* margin 0; */
 }
 figure{
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
     margin-right: 0;
      /* border: 2px solid rgb(7, 2, 2); */
 }
 
+
+
+
 /* tabla partidos */
 .partidos{
-    padding-left: 320px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-left: 320px; */
      cursor: pointer;
 }
 
 .mes{
-    background-color: black;
+    background-color:#00529e;
     color: antiquewhite;
     border-color: #00529e;
     font-size: 20px;
@@ -205,7 +234,7 @@ figure{
 }
 
 .parte td:hover{
-    background-color: rgb(16, 18, 88);
+    background-color: #094680eb;
 }
 
 
