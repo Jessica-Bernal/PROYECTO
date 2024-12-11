@@ -11,19 +11,14 @@
 
   
 header{
-    background-image: url("./ff.jpeg");
-    opacity: 0.9;
-    background-size: cover;
+    background-color: #094680;
     width: 100%;
-    height: 321px;
-    /*position: fixed; /*para que se mantenga en todo momento en la pagina*/
+    position: fixed; /*para que se mantenga en todo momento en la pagina*/
     z-index:100; /*especifica el orden en el que se amontonan los elemr¿entos*/
 }
 
 nav{
     float:left; /*Ubocacion dela barra */
-    margin-left: 35%;
-    
     /* background-color: rgba(13, 14, 14, 0.192); */
 }
 
@@ -36,7 +31,7 @@ nav ul li{
     float:left; /*quita la forma de lista*/
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
-    background-color: rgba(5, 5, 5, 0.603);
+    
 }
 
 nav ul li:hover{
@@ -51,11 +46,19 @@ nav ul li a{
     text-decoration: none;
 }
 
+.fondo{
+    margin-top: 64px;
+    width: 100%;
+    height:max-content;
+
+    
+}
+
 
 
 
 body{
-    background-color: #00529e;
+    /* background-color: #00529e; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
 }
@@ -136,15 +139,15 @@ td, th {
 }
 
 div img{
-    width: 260px;
-    height: 190px;
+    width: 230px;
+    height: 160px;
     margin:30px;
     border-radius: 5px;
 }
 
 div img:hover{
-    width: 290px;
-    height: 220px;
+    width: 260px;
+    height: 190px;
    
 }
 section{
@@ -190,6 +193,7 @@ figure{
     border-radius: 10px;
     transition: all ease 500ms;
 }
+
 .parte td:hover{
     background-color: rgb(16, 18, 88);
 }
