@@ -11,7 +11,7 @@
 
   
 header{
-    background-color: #094680;
+    background-color: #094680db;
     width: 100%;
     position: fixed; /*para que se mantenga en todo momento en la pagina*/
     z-index:100; /*especifica el orden en el que se amontonan los elemr¿entos*/
